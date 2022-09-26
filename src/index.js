@@ -1,3 +1,4 @@
-import helloWorld from './hello'
+import helloWorldBtn from "./components/hello";
 
-helloWorld();
+const helloWorld = new helloWorldBtn();
+helloWorld.render();
