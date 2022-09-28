@@ -22,6 +22,23 @@ module.exports = {
       title: 'Output Management',
     }),
   ],
+  devServer: {
+    // contentBase:path.resolve(__dirname, "./dist"),
+    static: {
+      directory: path.resolve(__dirname, "./dist"),
+    },
+    compress: true,
+    port: 3010,
+    hot: true,
+    devMiddleware: {
+      index: 'filename.html',
+    },
+    allowedHosts: 'all',
+    bonjour: {
+      type: 'http',
+    },
+
+  },
 };
 
 // rules  its the rules to deal with files in the application  array of objects specified for a spicific thing
