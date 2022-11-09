@@ -37,10 +37,12 @@ module.exports = {
     bonjour: {
       type: 'http',
     },
-
   },
 };
 
 // rules  its the rules to deal with files in the application  array of objects specified for a spicific thing
 // use what we should use prepared before to deal with files
 // [contenthash] every time generate a new file 
+// tsc -t ES6 -w  hello.ts => transpile
+// tsc --init => give us the configuration  
+//  tsc --v
